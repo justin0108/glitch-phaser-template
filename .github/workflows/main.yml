@@ -16,4 +16,3 @@ jobs:
           SOURCE_REPO: "justin0108/glitch-phaser-template"
         run: |
           curl -H "authorization: ${AUTHTOKEN}" -X POST "https://api.glitch.com/project/githubImport?projectId=${PROJECTID}&repo=${SOURCE_REPO}"
-Footer
