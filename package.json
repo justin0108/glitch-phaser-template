@@ -1,0 +1,26 @@
+{
+  "name": "glitch-phaser-template",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "expose-loader": "4.0.0",
+    "ts-loader": "^9.4.2",
+    "typescript": "^4.9.5",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "phaser": "3.55.2",
+    "cpy-cli": "^4.2.0",
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "clean": "rm -fr dist",    
+    "start": "tsc && node ./dist/expressMain.js",
+    "develop": "webpack serve --hot --port 9090",
+    "build-webpack": "webpack --mode production && cpy ./dist/bundle.js ./public --flat",
+    "build-ts": "tsc"
+  },
+  "license": "MIT"
+}
