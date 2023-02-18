@@ -1,6 +1,9 @@
 {
   "name": "glitch-phaser-template",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=16.x"
+  },
   "devDependencies": {
     "@types/express": "^4.17.17",
     "expose-loader": "4.0.0",
